@@ -45,11 +45,19 @@ Qiita参考：https://qiita.com/echolimitless/items/83f8658cf855de04b9ce
  
 ```bash
 npm install
+```
 
+```bash
 # .env.example を .env にリネーム
 vm .env.example .env
+```
+
+```bash
 # private key を .env　に記述
 CERTIFICATE_PRIVATE_KEY=***********************
+```
+
+```bash
 # aggregateTransaction.js 内の設定箇所を修正
 // (※ここを追加する)
 // ======================================
@@ -65,7 +73,9 @@ var mosaic_size = 1
 var fee_size = 0
 var message = 'ここにメッセージを入れる'
 // ======================================
+```
 
+```bash
 #全ての設定が終わったら実行
 node aggregateTransaction.js
 ```
