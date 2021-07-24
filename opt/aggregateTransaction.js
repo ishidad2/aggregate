@@ -20,8 +20,8 @@ var epochAdjustment
 // 送信したいアドレス配列
 // 送信したいアドレスを増やす場合はここを増やす
 var address_list = [
-  'NABLQQ7K4XA5ORI2633WAX5X5CVFD7L357ZL2CA',
-  'NCGWJEOPGRX57C7OEOP5VESJQROT6P4HWVELS5Q',
+  'NABLQQ7K********************',
+  'NCGWJEOP********************',
 ]
 //送信するモザイク量
 var mosaic_size = 1.1
