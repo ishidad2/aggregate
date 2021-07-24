@@ -1,0 +1,17 @@
+{
+  "name": "dhealth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aggregateTransaction.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.0",
+    "rxjs": "^7.0.0",
+    "symbol-sdk": "^1.0.0"
+  }
+}
