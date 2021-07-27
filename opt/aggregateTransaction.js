@@ -12,7 +12,7 @@ const mosaic_id = '39E0C49FA322A459'; //DHP
 const networkGenerationHash = 'ED5761EA890A096C50D3F50B7C2F0CCB4B84AFC9EA870F381E84DDE36D04EF16'  //DHP
 const networkCurrencyDivisibility = 6
 const explorer = 'http://explorer.dhealth.cloud'
-const limit = 1;  //100以上は不可
+const limit = 100;  //100以上は不可
 const mosaic_limit = 100; //アラートを表示するモザイク量
 var epochAdjustment
 // ======================================
