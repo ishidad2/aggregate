@@ -1,0 +1,7 @@
+
+const ADDRESSES = [
+  ["NAG47O**********", "message"],
+  ["NAG47O**********", ""],
+];
+
+module.exports = ADDRESSES;
