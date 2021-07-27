@@ -53,20 +53,30 @@ vm .env.example .env
 ```
 
 ```bash
+# .address.js.example を address.js にリネーム
+vm address.js.example address.js
+```
+
+```bash
 # private key を .env　に記述
 CERTIFICATE_PRIVATE_KEY=***********************
 ```
 
 ```bash
-# aggregateTransaction.js 内の設定箇所を修正
+# address.js 内の設定箇所を修正
 // (※ここを追加する)
 // ======================================
 // 送信したいアドレス配列
 // 送信したいアドレスを増やす場合はここを増やす
-var address_list = [
-  'NDBSQQ*******************',
-  'NB4REC*******************',
-]
+const ADDRESSES = [
+  ["NAG47O**********", "message"],
+  ["NAG47O**********", ""],
+];
+
+module.exports = ADDRESSES;
+```
+
+```bash
 //送信するモザイク量
 var mosaic_size = 1
 //手数料(DHPの場合0でもイケる)
