@@ -129,7 +129,7 @@ function sliceByNumber (array, number) {
       //アグリゲートトランザクションに署名
       const aggregateTransaction = symbol_sdk_1.AggregateTransaction.createComplete(symbol_sdk_1.Deadline.create(epochAdjustment),
         sendAddressList,
-        network_type, [], symbol_sdk_1.UInt64.fromUint(fee_size))
+        network_type, [], symbol_sdk_1.UInt64.fromUint(fee_size * Math.pow(10, networkCurrencyDivisibility)))
 
       //アグリゲートトランザクションをアナウンス
       const signedTransaction = senderAccount.sign(aggregateTransaction, networkGenerationHash)
