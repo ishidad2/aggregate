@@ -1,7 +1,7 @@
 
 const ADDRESSES = [
-  ["NAG47O**********", "message"],
-  ["NAG47O**********", ""],
+  ["NAG47O**********", "message", 0.0],
+  ["NAG47O**********", "", 0.5],
 ];
 
 module.exports = ADDRESSES;
