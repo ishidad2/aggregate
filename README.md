@@ -68,9 +68,12 @@ CERTIFICATE_PRIVATE_KEY=***********************
 // ======================================
 // 送信したいアドレス配列
 // 送信したいアドレスを増やす場合はここを増やす
+// 配列の3番目は送信したい数量（0か0.0にすると）
+// aggregateTransaction.js 27行目 送信するモザイク量を優先する
+// var mosaic_size = 0.1;
 const ADDRESSES = [
-  ["NAG47O**********", "message"],
-  ["NAG47O**********", ""],
+  ["NAG47O**********", "message", 1.0],
+  ["NAG47O**********", "", 0],
 ];
 
 module.exports = ADDRESSES;
