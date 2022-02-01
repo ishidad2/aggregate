@@ -1,4 +1,4 @@
-# dHealth Aggregate Tool
+# Aggregate Tool
 
 dHealth NetworkのDHPをアグリゲートトランザクションにて送信するツールです。 
 Symbolでも使えます。
@@ -57,6 +57,30 @@ vm .env.example .env
 vm address.js.example address.js
 ```
 
+Symbolネットワークを使う場合はノードリストを切り替え（aggregateTransaction.js 6行目）
+
+```aggregateTransaction.js 6行目
+const nodeList = require('./config.js');
+```
+
+変更後
+
+```
+const nodeList = require('./sym-config.js');
+```
+
+モザイク名の変更(aggregateTransaction.js 11行目)
+
+送信したいモザイク名に変更してください。
+
+
+```aggregateTransaction.js 11行目
+const mosaic_id = '39E0C49FA322A459'; //DHP
+
+```
+
+送信元のプライベートキーを設定
+
 ```bash
 # private key を .env　に記述
 CERTIFICATE_PRIVATE_KEY=***********************
@@ -97,10 +121,10 @@ node aggregateTransaction.js
  
 免責事項
 
-dHealth Aggregate Toolを使用したことにより発生したあらゆる損失や損害について、私は責任を負わないものとします。
+Aggregate Toolを使用したことにより発生したあらゆる損失や損害について、私は責任を負わないものとします。
  
  
 # License
  
-"dHealth Aggregate Tool" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"Aggregate Tool" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
  
