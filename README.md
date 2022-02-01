@@ -71,7 +71,7 @@ const nodeList = require('./sym-config.js');
 
 モザイク名の変更(aggregateTransaction.js 11行目)
 
-送信したいモザイク名に変更してください。
+送信したいモザイク名に変更
 
 
 ```aggregateTransaction.js 11行目
