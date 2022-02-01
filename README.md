@@ -1,7 +1,7 @@
 # dHealth Aggregate Tool
 
 dHealth NetworkのDHPをアグリゲートトランザクションにて送信するツールです。 
- 
+Symbolでも使えます。
  
 # Requirement
  
